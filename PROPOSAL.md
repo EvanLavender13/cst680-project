@@ -2,13 +2,13 @@
 # Exploration of Fairness in The `Precision Disease Control Problem`
 ## Evan Lavender
 
-## Introduction
+# Introduction
 The `precision disease control problem` is defined in [[1]](#1) as the problem of optimally allocating vaccines in a social network in a step-by-step fashion.
 In their experiments, they use the `ML-fairness-gym`[[2]](#2) library to simulate epidemic control and study if from both an efficiency and fairness perspective.
 The topic of disease control is incredibly relevant and it presents an interesting domain for the study of fairness, efficiency, and their trade-offs.
 For this project, I would like to replicate and extend the research of [[1]](#1) to understand the notion and effects of fairness and efficiency in the disease control domain.
 
-## Background
+# Background
 `ML-fairness-gym` is a set of components for building simple simulations that explore the potential long-run impacts of deploying machine learning-based decision systems in social environments[[2]](#2).
 It is built as an extension of the OpenAI Gym[[3]](#3) toolkit, which provides a standard API to communicate between learning algorithms and environments.
 
@@ -26,7 +26,7 @@ We implemented a similar model and tried various intervention strategies on diff
 Our measure of efficiency was the ratio of infected to healthy individuals, calculated over the entire population.
 The social network graphs contained identifiable communities to be relatable, but efficiency between them was not considered.
 
-## Proposal
+# Proposal
 There is a set of goals that I would like to achieve with this project:
 
 1. Gain background knowledge of fairness in the `precision disease control problem` from [[1]](#1).
