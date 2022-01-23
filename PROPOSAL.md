@@ -9,7 +9,7 @@ The topic of disease control is incredibly relevant and it presents an interesti
 For this project, I would like to replicate and extend the research of [[1]](#1) to understand the notion and effects of fairness and efficiency in the disease control domain.
 
 ## Background
-
+![graph](./11-Figure8-1.png")
 
 ## Proposal
 
