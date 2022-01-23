@@ -1,6 +1,6 @@
 # CS T680 Project Proposal
+# Exploration of Fairness in The `Precision Disease Control Problem`
 ## Evan Lavender
-## TBD: "precision disease control problem": experiments with `ml-fairness-gym` infectious disease environment
 
 ## Introduction
 The `precision disease control problem` is defined in [[1]](#1) as the problem of optimally allocating vaccines in a social network in a step-by-step fashion.
@@ -27,7 +27,7 @@ Our measure of efficiency was the ratio of infected to healthy individuals, calc
 The social network graphs contained identifiable communities to be relatable, but efficiency between them was not considered.
 
 ## Proposal
-Here is a list of goals I would like to achieve with this project
+There is a set of goals that I would like to achieve with this project
 
 1. Gain background knowledge of fairness in the `precision disease control problem` from [[1]](#1).
 2. Install and explore the `ML-fairness-gym` library [[2]](#2).
