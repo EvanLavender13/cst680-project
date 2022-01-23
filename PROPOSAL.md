@@ -27,7 +27,7 @@ Our measure of efficiency was the ratio of infected to healthy individuals, calc
 The social network graphs contained identifiable communities to be relatable, but efficiency between them was not considered.
 
 ## Proposal
-There is a set of goals that I would like to achieve with this project
+There is a set of goals that I would like to achieve with this project:
 
 1. Gain background knowledge of fairness in the `precision disease control problem` from [[1]](#1).
 2. Install and explore the `ML-fairness-gym` library [[2]](#2).
