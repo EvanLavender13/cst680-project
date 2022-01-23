@@ -20,11 +20,24 @@ An instance of the environment contains a population of individuals represented 
 The `agent` in the simulation decides which individual(s) to treat.
 The `agent-environment` framing is modeled as a `Markov Decision Process (MDP)` because it naturally encodes the idea that decisions of the agent have consequences beyond those that can be summarized in terms of prediction error[[4]](#4).
 
-
-
-<img src="11-Figure8-1.png" alt="karate club graph" width="400"/>
+My own interest in the domain comes from a previous project.
+I worked on a final project in the `algorithmic game theory` course that explored the epidemic problem.
+We implemented a similar model and tried various intervention strategies on different social network graphs.
+Our measure of efficiency was the ratio of infected to healthy individuals, calculated over the entire population.
+The social network graphs contained identifiable communities to be relatable, but efficiency between them was not considered.
 
 ## Proposal
+Here is a list of goals I would like to achieve with this project
+
+1. Gain background knowledge of fairness in the `precision disease control problem` from [[1]](#1).
+2. Install and explore the `ML-fairness-gym` library [[2]](#2).
+3. Replicate all of (or most of) the experiments from [[1]](#1).
+4. Extend the experiments from [[1]](#1) by using networks and strategies from [[5]](#5).
+5. Write a paper summarizing the above.
+
+This project will explore the long-term effects of interventions by modeling an infectious disease environment.
+The environment model will show the consequences of different intervention strategies on communities and the population as a whole.
+It also presents a unique and topical domain that might not be covered in the course.
 
 ## References
 <a id="1">[1]</a>
@@ -39,6 +52,9 @@ https://github.com/openai/gym
 <a id="4">[4]</a>
 https://github.com/google/ml-fairness-gym/blob/master/papers/acm_fat_2020_fairness_is_not_static.pdf
 
+<a id="5">[5]</a>
+https://github.com/EvanLavender13/cs618-final-project
+
+### Possible References
 - https://www.nature.com/articles/s41591-019-0345-2
 - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8483379/
-- https://github.com/EvanLavender13/cs618-final-project
