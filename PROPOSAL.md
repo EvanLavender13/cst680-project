@@ -20,7 +20,7 @@ An instance of the environment contains a population of individuals represented 
 The `agent` in the simulation decides which individual(s) to treat.
 The `agent-environment` framing is modeled as a `Markov Decision Process (MDP)` because it naturally encodes the idea that decisions of the agent have consequences beyond those that can be summarized in terms of prediction error[[4]](#4).
 
-My own interest in the domain comes from a previous project.
+My own interest in the domain comes from a previous project[[5]](#5).
 I worked on a final project in the `algorithmic game theory` course that explored the epidemic problem.
 We implemented a similar model and tried various intervention strategies on different social network graphs.
 Our measure of efficiency was the ratio of infected to healthy individuals, calculated over the entire population.
