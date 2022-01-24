@@ -4,7 +4,7 @@
 
 # Introduction
 The `precision disease control problem` is defined in [[1]](#1) as the problem of optimally allocating vaccines in a social network in a step-by-step fashion.
-In their experiments, they use the `ML-fairness-gym`[[2]](#2) library to simulate epidemic control and study if from both an efficiency and fairness perspective.
+In their experiments, they use the `ML-fairness-gym`[[2]](#2) library to simulate epidemic control and study it from both an efficiency and fairness perspective.
 The topic of disease control is incredibly relevant and it presents an interesting domain for the study of fairness, efficiency, and their trade-offs.
 For this project, I would like to replicate and extend the research of [[1]](#1) to understand the notion and effects of fairness and efficiency in the disease control domain.
 
