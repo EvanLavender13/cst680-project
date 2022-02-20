@@ -9,7 +9,7 @@ import numpy as np
 from tqdm import trange
 import tensorflow as tf
 import matplotlib.pyplot as plt
-plt.style.use(["science", "notebook"])
+plt.style.use("science")
 
 from experiments import infectious_disease as ide
 from agents import infectious_disease_agents as ida
@@ -38,16 +38,20 @@ def run_simulations(n_sims, exp):
     exp.scenario_builder()
     for i in trange(n_sims):
         exp.seed = i
+        np.random.seed(i)
         r = exp.run()
         process_metrics(i, metrics, r["metric_results"])
     return metrics
 
 if __name__ == "__main__":
+    np.random.seed(13)
+    TAU   = 0.75
+    RHO   = 1.0
     ide.GRAPHS["chain"] = nx.generators.path_graph(11)
     EXP = ide.Experiment()
     EXP.graph_name = "chain"
-    EXP.infection_probability = 0.75
-    EXP.infected_exit_probability = 1.0
+    EXP.infection_probability     = TAU
+    EXP.infected_exit_probability = RHO
     EXP.num_treatments = 1
     EXP.burn_in = 0
     
@@ -57,11 +61,11 @@ if __name__ == "__main__":
     EXP.agent_constructor = ide.NullAgent
     null_metrics = run_simulations(N, EXP)
 
-    EXP.agent_constructor = ide.RandomAgent
-    rng_metrics = run_simulations(N, EXP)
-
     EXP.agent_constructor = ida.MiddleAgent
     mid_metrics = run_simulations(N, EXP)
+
+    EXP.agent_constructor = ide.RandomAgent
+    rng_metrics = run_simulations(N, EXP)
 
     EXP.agent_constructor = ida.NeighborAgent
     nbr_metrics = run_simulations(N, EXP)
